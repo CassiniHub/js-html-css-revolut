@@ -7,9 +7,23 @@ function hoverMenu() {
    });
 }
 
+function bodyClick() {
+   
+   $('body').click(function () {
+      
+      $('#dropdown-features').removeClass('flexbox').addClass('hide');
+   })
+
+   $('#dropdown-features').click(function(event) {
+      
+      event.stopPropagation();
+   })
+}
+
 function init() {
    
    hoverMenu();
+   bodyClick();
 }
 
 $(document).ready(init);
