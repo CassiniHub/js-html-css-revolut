@@ -1,9 +1,11 @@
 function hoverMenu() {
    
-   $('#features').hover(function () {
+   $('.nav-voice').hover(function () {
       
-      console.log('hello world');
-      $('#dropdown-features').removeClass('hide').addClass('flexbox');
+      var hoverNavVoice    = $(this);
+      var dropdownNavVoice = hoverNavVoice.find('.dropdown');
+
+      $(dropdownNavVoice).removeClass('hide').addClass('flexbox');
    });
 }
 
@@ -11,10 +13,10 @@ function bodyClick() {
    
    $('body').click(function () {
       
-      $('#dropdown-features').removeClass('flexbox').addClass('hide');
+      $('.dropdown').removeClass('flexbox').addClass('hide');
    })
 
-   $('#dropdown-features').click(function(event) {
+   $('.dropdown').click(function (event) {
       
       event.stopPropagation();
    })

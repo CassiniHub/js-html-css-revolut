@@ -62,7 +62,7 @@ nav ul li{
 }
 
 /* dropdown menus */
-#dropdown-features{
+.dropdown{
    position: absolute;
    top: 60px;
    right: 0;
