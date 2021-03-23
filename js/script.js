@@ -5,6 +5,8 @@ function hoverMenu() {
       var hoverNavVoice    = $(this);
       var dropdownNavVoice = hoverNavVoice.find('.dropdown');
 
+      $('.dropdown.flexbox').removeClass('flexbox').addClass('hide');
+      // $('.dropdown').not(dropdownNavVoice).removeClass('flexbox').addClass('hide');
       $(dropdownNavVoice).removeClass('hide').addClass('flexbox');
    });
 }
