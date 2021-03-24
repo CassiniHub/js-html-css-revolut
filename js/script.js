@@ -18,7 +18,7 @@ function bodyClick() {
       $('.dropdown').removeClass('flexbox').addClass('hide');
    })
 
-   $('.dropdown').click(function (event) {
+   $('.dropdown').click(function(event) {
       
       event.stopPropagation();
    })
